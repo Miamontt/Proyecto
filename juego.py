@@ -1,6 +1,5 @@
 #Juego del ahorcado
 #
-import random
 dificultad = input("¿Qué dificultad quiere para el juego? baja/media/alta: ")
 if dificultad == 'baja':
     lista = ['listi']
