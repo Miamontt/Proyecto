@@ -36,4 +36,4 @@ if dificultad == 'baja':
                     print(f"¡Felicidades, ganaste el juego! la palabra es, {lista}")
                     break
 
-letra = input("Ingresa una letra ")
+letra = input("Ingresa una letra ").strip().lower()
