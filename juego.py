@@ -1,8 +1,8 @@
 import random
 
-def busqueda_lineal(lista, objetivo):
+def busqueda_lineal(lista, letra):
     for i in range(len(lista)):
-        if lista[i] == objetivo:
+        if lista[i] == letra:
             return i
     return -1
 
@@ -108,7 +108,7 @@ letras_usadas = []
 
 # Bucle principal del juego
 while intentos_restantes > 0 and '_' in letras_adivinadas:
-    mostrar_ahorcado(intentos_usados, max_intentos)
+    ahorcado(intentos_usados, max_intentos)
     print("\nPalabra:", ' '.join(letras_adivinadas))
     print("Intentos restantes:", intentos_restantes)
 
