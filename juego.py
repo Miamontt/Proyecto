@@ -14,7 +14,7 @@ def ordenamiento_burbuja(lista):
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
     return lista
 
-def mostrar_ahorcado(intentos_usados, max_intentos):
+def ahorcado(intentos_usados, max_intentos):
     etapas = [
         """
            -----
@@ -138,7 +138,7 @@ while intentos_restantes > 0 and '_' in letras_adivinadas:
         print("La letra no está.")
 
 # Resultado final
-mostrar_ahorcado(intentos_usados, max_intentos)
+ahorcado(intentos_usados, max_intentos)
 if '_' not in letras_adivinadas:
     print("\n ganaste la palabra era:", palabra)
 else:
