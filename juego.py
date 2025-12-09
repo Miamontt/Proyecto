@@ -131,15 +131,15 @@ while intentos_restantes > 0 and '_' in letras_adivinadas:
             encontrada = True
 
     if encontrada:
-        print("✅ ¡Bien! La letra está en la palabra.")
+        print("La letra está en la palabra.")
     else:
         intentos_restantes -= 1
         intentos_usados += 1
-        print("❌ La letra no está. Pierdes un intento.")
+        print("La letra no está.")
 
 # Resultado final
 mostrar_ahorcado(intentos_usados, max_intentos)
 if '_' not in letras_adivinadas:
-    print("\n🎉 ¡Ganaste! La palabra era:", palabra)
+    print("\n ganaste la palabra era:", palabra)
 else:
-    print("\n💀 ¡Perdiste! La palabra era:", palabra)
+    print("\n Perdiste la palabra era:", palabra)
