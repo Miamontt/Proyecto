@@ -87,7 +87,7 @@ def ahorcado(intentos_usados, max_intentos):
 
 palabras_por_dificultad = {
     "baja": ["listi", "gato", "casa", "perro"],
-    "media": ["introducción", "programación", "computadora"],
+    "media": ["introduccion", "programacion", "computadora"],
     "alta": ["al pensamiento computacional", "desarrollo", "arquitectura"]
 }
 
@@ -139,5 +139,6 @@ if '_' not in letras_adivinadas:
     print("\n ¡Ganaste! La palabra era:", palabra)
 else:
     print("\n ¡Perdiste! La palabra era:", palabra)
+
 
 
